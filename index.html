@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 3D Background Canvas -->
+    <canvas id="canvas3d"></canvas>
+    
+    <!-- Particle Hearts Container -->
+    <div id="hearts-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero fade">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="This is for you 💕">This is for you 💕</h1>
+            <p class="subtitle">My spoiled girlfriend who wants me to ask her for Valentine's</p>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story fade">
+        <div class="content-wrapper">
+            <h2 class="section-title">Why you're special to me</h2>
+            <p class="story-text">
+                Somewhere between the laughs, the conversations, and the quiet moments, 
+                you became someone I genuinely care about. Every day with you feels like 
+                discovering something beautiful I never knew I was missing.
+            </p>
+            <div class="decorative-line"></div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="gallery fade">
+        <h2 class="section-title">Little moments that mean a lot</h2>
+        <div class="photo-grid">
+            <div class="photo-card" style="--delay: 0s;">
+                <div class="photo-frame">
+                    <img src="PHOTOES/photo1.png" alt="Our moment">
+                    <div class="photo-overlay">
+                        <span class="overlay-heart">💗</span>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-card" style="--delay: 0.1s;">
+                <div class="photo-frame">
+                    <img src="PHOTOES/photo2.png" alt="YOU mean the world to me">
+                    <div class="photo-overlay">
+                        <span class="overlay-heart">💗</span>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-card" style="--delay: 0.2s;">
+                <div class="photo-frame">
+                    <img src="PHOTOES/photo3.png" alt="You are amazing">
+                    <div class="photo-overlay">
+                        <span class="overlay-heart">💗</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Question -->
+    <section class="question fade">
+        <div class="card" id="valentine-card">
+            <div class="card-glow"></div>
+            <div class="sparkles">
+                <span class="sparkle">✨</span>
+                <span class="sparkle">✨</span>
+                <span class="sparkle">✨</span>
+                <span class="sparkle">✨</span>
+                <span class="sparkle">✨</span>
+                <span class="sparkle">✨</span>
+            </div>
+            
+            <div class="card-content">
+                <h2 class="question-text">So I wanted to ask you…</h2>
+                <h3 class="big-question">Will you be my Valentine?</h3>
+                
+                <div class="buttons">
+                    <button id="yes" class="btn-yes">
+                        <span class="btn-text">Yes 💗</span>
+                        <span class="btn-shine"></span>
+                    </button>
+                    <button id="no" class="btn-no">
+                        <span class="btn-text">No 🙃</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
